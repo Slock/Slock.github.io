@@ -1,2 +1,2 @@
 # Slock.github.io
-right
+test for the first blog
