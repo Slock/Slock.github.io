@@ -53,8 +53,8 @@
         <div class="span9">
     <div class='article'>
         <div class="content-title">
-            <h1>第2篇博客</h1>
-一 07 十二月 2015
+            <h1>AndroidStudio2.0发布</h1>
+五 11 十二月 2015
 
 by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</a>
  
@@ -62,8 +62,27 @@ by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</
 
         </div>
 	
-        <div><p>这里开始可以书写正文了
-blabla....</p></div>
+        <div><blockquote>
+<p>One the most requested features we receive is to make app builds and deployment faster in Android Studio. Today at the Android Developer Summit, we’re announcing a preview of Android Studio 2.0 featuring Instant Run that will dramatically improve your development workflow. With Android Studio 2.0, we are also including a preview of a new GPU Profiler.</p>
+<p>All these updates are available now in the canary release channel, so we can get your feedback. Since this initial release is a preview, you may want to download and run an additional copy of Android Studio in parallel with your current version.</p>
+</blockquote>
+<p><strong>谷歌前些日子放出了AS2.0 canary版本，添加了许多干货，主题是Speed提速，包括代码即时更新（Instant Run）、GPU分析工具、Gradle编译速度提升、高性能模拟器以及谷歌服务的内嵌等。</strong></p>
+<h2>代码即时更新（Instant Run: Faster Build &amp; Deploy）</h2>
+<p>这里的热更新是指编译器到模拟器或者开发机的热更新。其实之前通过LayoutCast插件已经可以实现xml资源文件热更新，但是有一定的局限性，仅支持Mac开发环境以及Android 5.0。而Android Studio 2.0的Instant Run特性除了支持xml资源文件，还支持代码热更新，同时支持所有的Android版本、虚拟机、实体设备。在第一次运行后，更改代码或者xml资源文件，再次运行时，Android Studio编译完成后将会直接在运行中的APP中部署修改的代码或者xml资源文件。</p>
+<h2>GPU分析工具</h2>
+<p>通过GPU Profiler，开发者可以看到详细的OpenGL ES 状态和指令，记录整个sessions，对GPU进行逐帧分析。对于那些开发图像密集型应用和游戏的开发者而言，这是一个不小的福利。</p>
+<h2>Gradle提速</h2>
+<p>Android Studio 2.0的编译速度将是之前版本的2至2.5倍，同时增量编译速度能快至50倍。相较而言，Facebook此前推出的编译工具buck能将增量编译的速度提升8倍左右，LayoutCast能提升10倍左右。总而言之，Google的意思是Android开发者可以和buck与LayoutCast说再见了，全编译时聊天喝咖啡的日子也要结束了。</p>
+<h2>新的模拟器</h2>
+<p>通过这次更新，Google发布了新的模拟器，它将比任何物理设备都运行得更快。除了运行速度方面的提升，开发团队也重新设计了用户界面。这表示新的模拟器将更易操作。通过它开发者可以模拟不同的网络状态、GPS位置、摄像头和电量状态。值得一提的是，你可以缩放模拟器窗口的大小模拟不同的屏幕尺寸。这意味着Android开发者可以实时地在同一个模拟器中测试APP在不同尺寸设备中的表现。Android开发者也可以和Genymotion说再见了。</p>
+<h2>总结</h2>
+<p>Android Studio 2.0版本解决了Android开发者一直以来抱怨的多个问题，从多个层面提升了Android开发体验，尤其是效率的提升，为开发者节省了大量的时间与精力。正如大会中演讲者所言：Android开发者的苦日子已经过去了。</p>
+<h2>下载地址</h2>
+<p><a href="http://tools.android.com/download/studio/canary" title="AndroidStudio2.0 Canary版本">http://tools.android.com/download/studio/canary</a></p>
+<h2>相关链接</h2>
+<p><a href="http://android-developers.blogspot.jp/2015/11/android-studio-20-preview.html">原文</a><br />
+<a href="http://www.infoq.com/cn/news/2015/12/android-studio-2.0">infoq</a><br />
+<a href="https://www.youtube.com/watch?v=xdItHEVfQ4U&amp;list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8&amp;index=1&amp;feature=iv&amp;src_vid=oBV2U4w89_A&amp;annotation_id=annotation_4285247905">youtube视频</a></p></div>
 	
         <hr>
 
@@ -71,7 +90,7 @@ blabla....</p></div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'codemixwine'; 
-    var disqus_title = '第2篇博客';
+    var disqus_title = 'AndroidStudio2.0发布';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
