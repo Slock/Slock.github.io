@@ -58,8 +58,8 @@
 
     <div class='article'>
         <div class="content-title">
-            <a href="http://www.codemixwine.com/androidstudio20fa-bu.html"><h1>AndroidStudio2.0发布</h1></a>
-五 11 十二月 2015
+            <a href="http://www.codemixwine.com/asde-xi-huan-he-shu-qian-gong-neng.html"><h1>AS的喜欢和书签功能</h1></a>
+三 16 十二月 2015
 
 by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</a>
  
@@ -69,29 +69,126 @@ by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</
         </div>
         
         <div><blockquote>
-<p>One the most requested features we receive is to make app builds and deployment faster in Android Studio. Today at the Android Developer Summit, we’re announcing a preview of Android Studio 2.0 featuring Instant Run that will dramatically improve your development workflow. With Android Studio 2.0, we are also including a preview of a new GPU Profiler.</p>
-<p>All these updates are available now in the canary release channel, so we can get your feedback. Since this initial release is a preview, you may want to download and run an additional copy of Android Studio in parallel with your current version.</p>
+<p>如果你是一个安卓开发者，你可能已经发现了一些隐藏在Android Studio里面的非常棒的功能。我也不是例外，而昨天我也在纠结（意思是花了些时间去理解）于一些让开发变的更轻松的新功能。这些功能就是书签（Bookmarks ）和喜欢（Favorites）功能。</p>
+<p>从概念上说这些都是非常我们很可能需要的基本的功能，而且从名字上也可以直观的看出它是做什么的。除此之外，我对自己也很无语，因为我居然不知道这些功能位于什么地方，也不知道 Android Studio左侧的 Tool Buttons bar 是个什么东西。这些功能并没有躲着我，而是一直都盯着我看呢。</p>
 </blockquote>
-<p><strong>谷歌前些日子放出了AS2.0 canary版本，添加了许多干货，主题是Speed提速，包括代码即时更新（Instant Run）、GPU分析工具、Gradle编译速度提升、高性能模拟器以及谷歌服务的内嵌等。</strong></p>
-<h2>代码即时更新（Instant Run: Faster Build &amp; Deploy）</h2>
-<p>这里的热更新是指编译器到模拟器或者开发机的热更新。其实之前通过LayoutCast插件已经可以实现xml资源文件热更新，但是有一定的局限性，仅支持Mac开发环境以及Android 5.0。而Android Studio 2.0的Instant Run特性除了支持xml资源文件，还支持代码热更新，同时支持所有的Android版本、虚拟机、实体设备。在第一次运行后，更改代码或者xml资源文件，再次运行时，Android Studio编译完成后将会直接在运行中的APP中部署修改的代码或者xml资源文件。</p>
-<h2>GPU分析工具</h2>
-<p>通过GPU Profiler，开发者可以看到详细的OpenGL ES 状态和指令，记录整个sessions，对GPU进行逐帧分析。对于那些开发图像密集型应用和游戏的开发者而言，这是一个不小的福利。</p>
-<h2>Gradle提速</h2>
-<p>Android Studio 2.0的编译速度将是之前版本的2至2.5倍，同时增量编译速度能快至50倍。相较而言，Facebook此前推出的编译工具buck能将增量编译的速度提升8倍左右，LayoutCast能提升10倍左右。总而言之，Google的意思是Android开发者可以和buck与LayoutCast说再见了，全编译时聊天喝咖啡的日子也要结束了。</p>
-<h2>新的模拟器</h2>
-<p>通过这次更新，Google发布了新的模拟器，它将比任何物理设备都运行得更快。除了运行速度方面的提升，开发团队也重新设计了用户界面。这表示新的模拟器将更易操作。通过它开发者可以模拟不同的网络状态、GPS位置、摄像头和电量状态。值得一提的是，你可以缩放模拟器窗口的大小模拟不同的屏幕尺寸。这意味着Android开发者可以实时地在同一个模拟器中测试APP在不同尺寸设备中的表现。Android开发者也可以和Genymotion说再见了。</p>
-<h2>总结</h2>
-<p>Android Studio 2.0版本解决了Android开发者一直以来抱怨的多个问题，从多个层面提升了Android开发体验，尤其是效率的提升，为开发者节省了大量的时间与精力。正如大会中演讲者所言：Android开发者的苦日子已经过去了。</p>
-<h2>下载地址</h2>
-<p><a href="http://tools.android.com/download/studio/canary" title="AndroidStudio2.0 Canary版本">http://tools.android.com/download/studio/canary</a></p>
-<h2>相关链接</h2>
-<p><a href="http://android-developers.blogspot.jp/2015/11/android-studio-20-preview.html">原文</a><br />
-<a href="http://www.infoq.com/cn/news/2015/12/android-studio-2.0">infoq</a><br />
-<a href="https://www.youtube.com/watch?v=xdItHEVfQ4U&amp;list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8&amp;index=1&amp;feature=iv&amp;src_vid=oBV2U4w89_A&amp;annotation_id=annotation_4285247905">youtube视频</a></p></div>
+<h2>喜欢</h2>
+<p>就如我所说的，喜欢和书签功能理解起来异常简单。喜欢的东西可以来自任意文件，从java类到xml资源以及两者之间的东西。把当前文件添加到喜欢只需按下(⌥⇧f)或者你也可以右键任何选项卡然后点击Add to Favorites。你可能需要创建一个新的喜欢列表或者如果你已经有了建立好的列表你可以直接添加进去。我发现用正在工作的标签或者关键词来命名喜欢列表是很有帮助的，这样我就能轻易的找到他们。</p>
+<p>对于查询已经保存的喜欢列表，有几种调出喜欢菜单的办法。最简单的就是按(⌘2)，另外就是查看Tool buttons bar (屏幕左边) ，找到垂直的Favorites 选项卡。</p>
+<p>注意：如果你处于免打扰模式你可以直接按 (⌘)两次就能显示侧边条。这个视图同时也是可以搜索的。如果你选中了某个东西的同时开始输入，它将会搜索你所有的喜欢和书签。</p>
+<h2>书签</h2>
+<p>书签要比喜欢稍微专业点。书签是针对行而言的，通过按下(fn F3)来创建，创建之后会在行的旁边放入一个选中图标，类似于debug 的断点。和喜欢的另一个不同点是可以给书签添加描述。只需进入Tool Buttons bar 区域的喜欢选项卡，然后右键任意书签在弹出的菜单里选择Edit Description。</p>
+<p>There you have it a great way to create and organize Favorites and Bookmarks without cluttering up your IDE with tabs.</p>
+<p>现在你有了一个管理书签和喜欢内容的方法，不必在混乱的选项卡之间折腾了。</p>
+<p>原文链接 <a href="http://www.omitneedlesscode.com/blog/2015/12/8/android-studio-tip-bookmarks-and-favorites" title="原文链接">http://www.omitneedlesscode.com/blog/2015/12/8/android-studio-tip-bookmarks-and-favorites</a></p></div>
         <hr />
     </div>
 		
+
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="http://www.codemixwine.com/tui-jian-ji-ge-asgong-ju.html"><h2>推荐几个AS工具</h2></a>
+        <div class= "well small"> 二 15 十二月 2015
+
+by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</a>
+ 
+
+
+ </div>
+        <div class="summary"><h2>ButterKnife Zelezny</h2>
+<p>ButterKnife 生成器，使用起来非常简单方便
+<img alt="" src="http://www.stormzhang.com/image/zelezny_animated.gif" /></p>
+<h2>2、SelectorChapek</h2>
+<p>设计师给我们提供好了各种资源，每个按钮都要写一个selector是不是很麻烦？这么这个插件就为解决这个问题而生，你只需要做的是告诉设计师们按照规范命名就好了，其他一键搞定。
+<img alt="" src="http://www.stormzhang.com/image/select_option.png" /></p>
+<h2>3、GsonFormat</h2>
+<p>现在大多数服务端api都以json数据格式返回，而客户端需要根据api接口生成相应的实体类，这个插件把这个过程自动化了，赶紧使用起来吧。
+<img alt="" src="http://www.stormzhang.com/image/gson_format.gif" /></p>
+<h2>4、ParcelableGenerator</h2>
+<p>Android中的序列化有两种方式，分别是实现Serializable接口和Parcelable接口，但在Android中是推荐使用Parcelable，只不过我们这种方式要比Serializable方式要繁琐，那么有了这个插件一切就ok了。
+<img alt="" src="http://www.stormzhang.com/image/parcelable_generator.png" /></p>
+<h2>5、LeakCanary</h2>
+<p>良心企业Square最近刚开源的一个非常有用的工具，强烈推荐，帮助你在开发阶段方便的检测出内存泄露的问题，使用起来更简单方便，而且我们团队第一时间使用帮助我们发现了不少问题。
+<img alt="" src="http://www.stormzhang.com/image/leakcaneray.png" /></p> <a class="btn btn-info xsmall" href="http://www.codemixwine.com/tui-jian-ji-ge-asgong-ju.html">read more</a></div>
+    </div>	
+				
+
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="http://www.codemixwine.com/android-bu-fen-keng.html"><h2>Android 部分坑</h2></a>
+        <div class= "well small"> 二 15 十二月 2015
+
+by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</a>
+ 
+
+
+ </div>
+        <div class="summary"><p>在Android library中不能使用switch-case语句访问资源ID：在Android library中不能使用switch-case语句访问资源ID的原因分析及解决方案</p>
+<p>不能在Activity没有完全显示时显示PopupWindow和Dialog：popupwindow - Problems creating a Popup Window in Android Activity</p>
+<p>在多进程之间不要用SharedPreferences共享数据，虽然可以（MODE_MULTI_PROCESS），但极不稳定：android - MODE_MULTI_PROCESS for SharedPreferences isn’t working</p>
+<p>有些时候不能使用Application的Context，不然会报错（比如启动Activity，显示Dialog等）</p>
+<p>同一个应用的JNI代码，不要轻易换NDK编译的版本，否则会有很多问题（主要是一些方法实现不一样，并且高版本对代码的检测更严格），比如r8没有问题，但到r9就有问题了，这是个大坑；</p>
+<p>Android的JNI代码中，有返回类型的函数没有返回值编译的时候也不会报错；</p>
+<p>当前Activity的onPause方法执行结束后才会执行下一个Activity的onCreate方法，所以在onPause方法中不适合做耗时较长的工作，这会影响到页面之间的跳转效率；</p>
+<p>谨慎使用Android的透明主题，透明主题会导致很多问题，比如：如果新的Activity采用了透明主题，那么当前Activity的onStop方法不会被调用；在设置为透明主题的Activity界面按Home键时，可能会导致刷屏不干净的问题；进入主题为透明主题的界面会有明显的延时感 ...</p> <a class="btn btn-info xsmall" href="http://www.codemixwine.com/android-bu-fen-keng.html">read more</a></div>
+    </div>	
+				
+
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="http://www.codemixwine.com/qian-tan-rxjava.html"><h2>浅谈Rxjava</h2></a>
+        <div class= "well small"> 一 14 十二月 2015
+
+by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</a>
+ 
+
+
+ </div>
+        <div class="summary"><p><strong>RxJava</strong>正在Android开发者中变的越来越流行。唯一的问题就是上手不容易，尤其是大部分人之前都是使用命令式编程语言。但是一旦你弄明白了，你就会发现RxJava真是太棒了。
+这里仅仅是帮助你了解RxJava，整个系列共有四篇文章，希望你看完这四篇文章之后能够了解RxJava背后的思想，并且喜欢上RxJava。</p>
+<h2>基础</h2>
+<p>RxJava最核心的两个东西是Observables（被观察者，事件源）和Subscribers（观察者）。Observables发出一系列事件，Subscribers处理这些事件。这里的事件可以是任何你感兴趣的东西（触摸事件，web接口调用返回的数据。。。）</p>
+<p>一个Observable可以发出零个或者多个事件，知道结束或者出错。每发出一个事件，就会调用它的Subscriber的onNext方法，最后调用Subscriber.onNext()或者Subscriber.onError()结束。</p>
+<p>Rxjava的看起来很想设计模式中的观察者模式，但是有一点明显不同，那就是如果一个Observerble没有任何的的Subscriber，那么这个Observable是不会发出任何事件的。</p>
+<h2>Hello World</h2>
+<p>创建一个Observable对象很简单，直接调用Observable.create即可</p>
+<div class="highlight"><pre><span class="nx">Observable</span><span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span> <span class="nx">myObservable</span> <span class="o">=</span> <span class="nx">Observable</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span>
+<span class="k">new</span> <span class="nx">Observable</span><span class="p">.</span><span class="nx">OnSubscribe</span><span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">@</span><span class="nx">Override</span>
+    <span class="kr">public ...</span></pre></div> <a class="btn btn-info xsmall" href="http://www.codemixwine.com/qian-tan-rxjava.html">read more</a></div>
+    </div>	
+				
+
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="http://www.codemixwine.com/androidstudio20fa-bu.html"><h2>AndroidStudio2.0发布</h2></a>
+        <div class= "well small"> 五 11 十二月 2015
+
+by <a class="url fn" href="http://www.codemixwine.com/author/slock.html">Slock</a>
+ 
+
+
+ </div>
+        <div class="summary"><blockquote>
+<p>One the most requested features we receive is to make app builds and deployment faster in Android Studio. Today at the Android Developer Summit, we’re announcing a preview of Android Studio 2.0 featuring Instant Run that will dramatically improve your development workflow. With Android Studio 2.0, we ...</p></blockquote> <a class="btn btn-info xsmall" href="http://www.codemixwine.com/androidstudio20fa-bu.html">read more</a></div>
+    </div>	
+				
 <div class="pagination">
 <ul>
     <li class="prev disabled"><a href="#">&larr; Previous</a></li>
